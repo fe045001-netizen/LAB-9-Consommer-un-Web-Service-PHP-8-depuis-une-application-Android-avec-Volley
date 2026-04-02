@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AddEtudiant">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Espace en haut -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <!-- Titre -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AJOUTER UN ÉTUDIANT"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:text="@string/nom"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_nom"
+            android:padding="12dp"
+            android:minHeight="48dp"
+            android:autofillHints="name"
+            android:background="@android:drawable/editbox_background" />
+
+        <TextView
+            android:text="@string/prenom"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_prenom"
+            android:padding="12dp"
+            android:minHeight="48dp"
+            android:autofillHints="name"
+            android:background="@android:drawable/editbox_background" />
+
+        <TextView
+            android:text="@string/ville"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <Spinner
+            android:id="@+id/ville"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/villes"
+            android:padding="8dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <TextView
+            android:text="@string/sexe"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/homme"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/homme"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:layout_marginEnd="16dp"
+                android:button="@android:drawable/btn_radio"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <RadioButton
+                android:id="@+id/femme"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/femme"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:button="@android:drawable/btn_radio"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2196F3"
+            android:background="#2196F3"
+            android:padding="12dp"
+            android:text="@string/add"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
