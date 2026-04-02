@@ -1,6 +1,4 @@
 
-
-```markdown
 # ProjetWS - Gestion des Étudiants
 
 Application Android pour gérer une liste d'étudiants avec Web Service PHP/MySQL.
@@ -12,24 +10,10 @@ Application Android pour gérer une liste d'étudiants avec Web Service PHP/MySQ
 
 ## Installation
 
-### 1. Base de données (phpMyAdmin)
-```sql
-CREATE DATABASE school1;
-USE school1;
-
-CREATE TABLE Etudiant (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nom VARCHAR(50),
-    prenom VARCHAR(50),
-    ville VARCHAR(50),
-    sexe ENUM('homme','femme')
-);
-```
-
-### 2. Serveur PHP
+### Serveur PHP
 Copier le dossier `ws` dans : `C:\xampp\htdocs\projet\ws\`
 
-### 3. Application Android
+### Application Android
 - Ouvrir le projet dans Android Studio
 - Modifier les URLs si nécessaire :
   - `http://10.0.2.2/projet/ws/createEtudiant.php`
